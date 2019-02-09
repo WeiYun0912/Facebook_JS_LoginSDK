@@ -48,7 +48,11 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 載入網頁時，首先要確認此用戶是否已經使用「Facebook 登入」來登入，<br>
 所以我們可以在初始化SDK時加上這段程式碼：
 ```js
-   FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-   });
+FB.getLoginStatus(function(response) {
+  statusChangeCallback(response);
+});
 ```
+getLoginStatus顧名思義就是取得目前用戶的登入狀態而這裡回傳的response有分為幾種
+1.connected - 這位用戶已登入 Facebook，也已經登入您的應用程式。
+2.not_authorized - 這位用戶已登入 Facebook，但尚未登入您的應用程式。
+3.unknown - 這位用戶沒有登入 Facebook，因此您無法得知用戶是否已登入您的應用程式，或者之前已呼叫 
