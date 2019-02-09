@@ -1,5 +1,5 @@
 # Facebook_JS_LoginSDK
-
+![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_1.PNG)
 ## 創建屬於自己的FacebookAPI應用程式
 
 ## 設定 Facebook JavaScript SDK
