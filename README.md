@@ -69,3 +69,9 @@ status 代表此用戶目前的登入狀態。狀態可能為以下其中一項�
 2. not_authorized - 這位用戶已登入 Facebook，但尚未登入您的應用程式。<br>
 3. unknown - 這位用戶沒有登入 Facebook，因此您無法得知用戶是否已登入您的應用程式，或者之前已呼叫 <br>
 FB.logout()，因此無法連結至 Facebook。
+<br>
+如果狀態是 connected，就會包含 authResponse，且由以下資料所構成：
+1. accessToken - 含有這位應用程式用戶的存取權杖。
+2. expiresIn - 以 UNIX 時間顯示權杖何時到期並需要再次更新。
+3. signedRequest - 已簽署的參數，其中包含這位應用程式用戶的資訊。
+4. userID - 這位應用程式用戶的編號。
