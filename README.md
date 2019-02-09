@@ -45,4 +45,10 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 ```
 
 ## 確認登入狀態
-載入網頁時，首先要確認此用戶是否已經使用「Facebook 登入」來登入
+載入網頁時，首先要確認此用戶是否已經使用「Facebook 登入」來登入，<br>
+所以我們可以在初始化SDK時加上這段程式碼：
+```js
+   FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+   });
+```
