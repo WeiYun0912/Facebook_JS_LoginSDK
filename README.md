@@ -52,7 +52,18 @@ FB.getLoginStatus(function(response) {
   statusChangeCallback(response);
 });
 ```
-getLoginStatus顧名思義就是取得目前用戶的登入狀態而這裡回傳的response有分為幾種<br>
+getLoginStatus顧名思義就是取得目前用戶的登入狀態而這裡回傳的response物件含有數個欄位<br>
+```js
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+```
 1. connected - 這位用戶已登入 Facebook，也已經登入您的應用程式。<br>
 2. not_authorized - 這位用戶已登入 Facebook，但尚未登入您的應用程式。<br>
 3. unknown - 這位用戶沒有登入 Facebook，因此您無法得知用戶是否已登入您的應用程式，或者之前已呼叫 <br>
