@@ -1,7 +1,7 @@
 # Facebook_JS_LoginSDK
 
 ## 創建屬於自己的FacebookAPI應用程式
-首先進到Facebook的開發人員[網站](https://developers.facebook.com/)，點選右上角**我的應用程式**
+首先進到Facebook的開發人員[網站](https://developers.facebook.com/)，點選右上角**我的應用程式**後**新增應用程式**
 
 ![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_1.PNG)
 ## 設定 Facebook JavaScript SDK
