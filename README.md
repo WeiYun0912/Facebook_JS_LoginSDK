@@ -49,7 +49,7 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 所以我們可以在初始化SDK時加上這段程式碼：
 ```js
 FB.getLoginStatus(function(response) {
-  statusChangeCallback(response);
+  console.log(response); //
 });
 ```
 getLoginStatus顧名思義就是取得目前用戶的登入狀態而這裡回傳的response物件含有數個欄位<br>
