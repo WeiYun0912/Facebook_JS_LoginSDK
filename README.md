@@ -4,7 +4,7 @@
 首先進到Facebook的開發人員[網站](https://developers.facebook.com/)，點選右上角**我的應用程式**後點選**新增應用程式**
 <br>
 ![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_1.PNG)
-<br>
+<br><br>
 於該視窗輸入自己要的名稱
 <br>
 ![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_2.PNG)
