@@ -25,15 +25,13 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 ```js
 <script>
   window.fbAsyncInit = function() {
+  //初始化FB JS SDK
     FB.init({
       appId      : '{你的應用程式id}',
       cookie     : true,
       xfbml      : true,
       version    : '{api的版本(目前最新是3.2)}'
     });
-      
-    FB.AppEvents.logPageView();   
-      
   };
 
   (function(d, s, id){
@@ -47,3 +45,4 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 ```
 
 ## 確認登入狀態
+載入網頁時，首先要確認此用戶是否已經使用「Facebook 登入」來登入
