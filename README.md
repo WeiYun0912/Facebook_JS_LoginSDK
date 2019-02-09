@@ -3,7 +3,7 @@
 ## 設定 Facebook JavaScript SDK
 Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>只需要將一小段一般的 JavaScript 置入 HTML 中，<br>就會以非同步的方式將 SDK 載入頁面中。
 **非同步載入是指不會阻擋頁面中其他元素的載入。**
-<br>
+<br><br>
 以下程式碼片段會提供 Facebook JavaScript SDK 基本版，選項會設定為最常見的預設值。在每一個要使用 Facebook 分析工具的頁面上，<br>
 **將以下程式碼片段直接插入開頭的 <body> 標籤後方。以應用程式編號取代 {your-app-id}，並以鎖定的 API 版本取代 {api-version}。目前的版本為v3.2。**
 ```js
