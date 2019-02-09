@@ -45,3 +45,5 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
    }(document, 'script', 'facebook-jssdk'));
 </script>
 ```
+
+## 確認登入狀態
