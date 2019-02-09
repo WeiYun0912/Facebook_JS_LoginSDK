@@ -10,7 +10,7 @@
 ![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_3.PNG)
 <br><br>
 因 **同源政策 (Same-origin policy)** 的關係我們需要修改應用程式網域為localhost(本機測試)
-![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_.PNG)
+![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_5.PNG)
 <br><br>
 接著跟著圖片的順序操作點選
 <br><br>
