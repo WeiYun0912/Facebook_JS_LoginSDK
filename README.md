@@ -75,3 +75,5 @@ FB.logout()，因此無法連結至 Facebook。
 2. expiresIn - 以 UNIX 時間顯示權杖何時到期並需要再次更新。<br>
 3. signedRequest - 已簽署的參數，其中包含這位應用程式用戶的資訊。<br>
 4. userID - 這位應用程式用戶的編號。<br>
+
+## 新增「Facebook 登入」按鈕
