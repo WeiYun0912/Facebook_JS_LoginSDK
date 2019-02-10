@@ -169,3 +169,4 @@ function logout(){
 | 主題 | 網址 |
 | --- | --- |
 |Facebook Developers|https://developers.facebook.com/|
+|圖形化API測試工具|https://developers.facebook.com/tools/explorer/|
