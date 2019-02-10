@@ -154,7 +154,6 @@ function statusChangeCallback(response){
     }
 }
 ```
-<br>
 在登出的函式裡面也補上
 ```js
 function logout(){
