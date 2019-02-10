@@ -1,6 +1,6 @@
 # Facebook_JS_LoginSDK
 
-## 創建屬於自己的FacebookAPI應用程式
+## 創建屬於自己的Facebook開發人員應用程式
 首先進到Facebook的開發人員[網站](https://developers.facebook.com/)，點選右上角**我的應用程式**後點選**新增應用程式**
 <br><br>
 ![image](https://github.com/WeiYun0912/Facebook_JS_LoginSDK/blob/master/images/FB_1.PNG)
@@ -85,9 +85,15 @@ FB.logout()，因此無法連結至 Facebook。
   onlogin="checkLoginState();">
 </fb:login-button>
 ```
+看到這段程式碼，你可能會想問說scope是什麼?<br>
+scope是登入以後，你想取得這個用戶的某些資訊，以上段程式碼來說就是取得用戶的公開個人資料和信箱。<br>
+某些資訊是在用戶登入以後就會取得的，例如：用戶的姓名(name)、姓(first_name)、名(last_name)等等…。<br>
+而某些資訊是需要加在scope的，例如：用戶信箱(email)、生日(user_birthday)等等…。<br>
+詳請可以參考Facebook提供的[權限參考資料](https://developers.facebook.com/docs/facebook-login/permissions)
+
 按鈕上的 onlogin 屬性是用於檢查登入狀態的 JavaScript **回呼**，以瞭解用戶是否已經成功登入：<br>
 這個 **回呼**，它會呼叫 FB.getLoginStatus() 來取得最新的登入狀態（範例中處理這個回應的是 statusChangeCallback() 函式）。<br>
-**回呼(Callback)** 指的是被主函式呼叫運算後會返回主函式<br>
+**回呼(Callback)** 指的是被主函式呼叫運算後會返回主函式。<br>
 ```js
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
