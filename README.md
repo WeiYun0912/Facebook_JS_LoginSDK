@@ -77,3 +77,21 @@ FB.logout()，因此無法連結至 Facebook。
 4. userID - 這位應用程式用戶的編號。<br>
 
 ## 新增「Facebook 登入」按鈕
+接下來要做的事情就是新增一個Facebook的登入按鈕，<br>
+由Facebook開發人員網站提供。<br>
+```js
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+```
+按鈕上的 onlogin 屬性是用於檢查登入狀態的 JavaScript **回呼**，以瞭解用戶是否已經成功登入：<br>
+這個 **回呼**，它會呼叫 FB.getLoginStatus() 來取得最新的登入狀態（範例中處理這個回應的是 statusChangeCallback() 函式）。<br>
+**回呼(Callback)** 指的是被主函式呼叫運算後會返回主函式<br>
+```js
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+```
