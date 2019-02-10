@@ -120,7 +120,6 @@ function checkLoginState() {
 ```html
 <button type="button" id="logout" class="btn btn-primary" onclick="logout()">Logout</button>
 ```
-<br>
 ```js
 function logout(){
  FB.logout(function(response){
@@ -128,4 +127,4 @@ function logout(){
  });
 }
 ```
-<br>
+
