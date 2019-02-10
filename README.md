@@ -143,7 +143,6 @@ function setStatus(Login){
  }
 }
 ```
-<br>
 ```js
 function statusChangeCallback(response){
  if(response.status === 'connected'){
@@ -155,6 +154,6 @@ function statusChangeCallback(response){
     }
 }
 ```
-
+<br>
 這樣做就可以達到我們要的效果。
 ## 搭配 圖形 API 測試工具 顯示用戶資訊
