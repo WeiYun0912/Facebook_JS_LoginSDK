@@ -49,7 +49,7 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 所以我們可以在初始化SDK時加上這段程式碼：
 ```js
 FB.getLoginStatus(function(response) {
-  console.log(response); //
+  statusChangeCallback(response); 
 });
 ```
 getLoginStatus顧名思義就是取得目前用戶的登入狀態而這裡回傳的response物件含有數個欄位<br>
@@ -75,7 +75,19 @@ FB.logout()，因此無法連結至 Facebook。
 1. accessToken - 含有這位應用程式用戶的存取權杖。<br>
 2. expiresIn - 以 UNIX 時間顯示權杖何時到期並需要再次更新。<br>
 3. signedRequest - 已簽署的參數，其中包含這位應用程式用戶的資訊。<br>
-4. userID - 這位應用程式用戶的編號。<br>
+4. userID - 這位應用程式用戶的編號。<br><br>
+
+statusChangeCallback是用來確認用戶目前的登入狀態。
+這邊我們可以用簡單的函式來判斷用戶是否登入。
+```js
+function statusChangeCallback(response){
+ if(response.status === 'connected'){
+     console.log('成功登入!');
+    } else {
+     console.log('尚未登入');
+    }
+}
+```
 
 ## 新增「Facebook 登入」按鈕
 接下來要做的事情就是新增一個Facebook的登入按鈕，<br>
@@ -99,7 +111,7 @@ scope是登入以後，你想取得這個用戶的某些資訊，以上段程式
 ```js
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
+    statusChangeCallback(response); 
   });
 }
 ```
