@@ -155,5 +155,13 @@ function statusChangeCallback(response){
 }
 ```
 <br>
+在登出的函式裡面也補上
+```js
+function logout(){
+ FB.logout(function(response){
+  setStatus(false);
+ });
+}
+```
 這樣做就可以達到我們要的效果。
 ## 搭配 圖形 API 測試工具 顯示用戶資訊
