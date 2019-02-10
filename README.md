@@ -128,6 +128,33 @@ function logout(){
 }
 ```
 ### 補充
-需要注意的是，用戶登入成功以後必須讓登入按鈕消失登出按鈕出現，登出的時候必須讓登入按鈕出現登出按鈕消失，
-
+需要注意的是，用戶登入成功以後必須讓登入按鈕消失登出按鈕出現，登出的時候必須讓登入按鈕出現登出按鈕消失，<br>
+所以我們可以新增一個函式來記錄登入和登出之後該做些什麼事，<br>
+```js
+function setStatus(Login){
+ //登入以後秀出登出、個人資料、貼文
+ if(Login){
+ document.getElementById('logout').style.display = 'block';
+ document.getElementById('fb-btn').style.display = 'none';
+ } else {
+ //登出以後秀出登入
+ document.getElementById('logout').style.display = 'none';
+ document.getElementById('fb-btn').style.display = 'block';
+ }
+}
+```
+<br>
+```js
+function statusChangeCallback(response){
+ if(response.status === 'connected'){
+     console.log('成功登入!');
+     setStatus(true); //成功登入 Login為true
+    } else {
+     console.log('尚未登入');
+     setStatus(false); //尚未當入 Login為false
+    }
+}
+```
+<br>
+這樣做就可以達到我們要的效果。
 ## 搭配 圖形 API 測試工具 顯示用戶資訊
