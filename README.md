@@ -116,15 +116,15 @@ function checkLoginState() {
 }
 ```
 登出按鈕相較之下要來的簡單多，我們可以利用Facebook提供的logout函式，<br>
-然後自己新增一個HTML按鈕當用戶點擊(onclick)登出按鈕以後就會觸發函式登出。
+然後自己新增一個HTML按鈕當用戶點擊(onclick)登出按鈕以後就會觸發函式登出。<br>
 ```html
 <button type="button" id="logout" class="btn btn-primary" onclick="logout()">Logout</button>
 ```
 ```js
 function logout(){
  FB.logout(function(response){
-   setElements(false);
+   
  });
 }
 ```
-
+## 搭配 圖形 API 測試工具 顯示用戶資訊
