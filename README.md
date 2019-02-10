@@ -163,4 +163,9 @@ function logout(){
 }
 ```
 這樣做就可以達到我們要的效果。
-## 搭配 圖形 API 測試工具 顯示用戶資訊
+## 搭配 圖形 API 測試工具 顯示用戶資訊(待補)
+
+## 參考資料
+| 主題 | 網址 |
+| --- | --- |
+|Facebook Developers|https://developers.facebook.com/|
