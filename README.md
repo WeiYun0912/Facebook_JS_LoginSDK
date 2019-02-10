@@ -21,13 +21,13 @@ Facebook JavaScript SDK 沒有任何需要下載或安裝的獨立檔案，<br>�
 **非同步載入是指不會阻擋頁面中其他元素的載入。**
 <br><br>
 以下程式碼片段會提供 Facebook JavaScript SDK 基本版，選項會設定為最常見的預設值。<br>在每一個要使用 Facebook 分析工具的頁面上，<br>
-**將以下程式碼片段直接插入開頭的 <body> 標籤後方。以應用程式編號取代 {your-app-id}，<br>並以鎖定的 API 版本取代 {api-version}。目前的版本為v3.2。**
+**將以下程式碼片段直接插入開頭的 <body> 標籤後方。以應用程式編號取代 {你的應用程式編號}，<br>並以鎖定的 API 版本取代 {api的版本(目前最新是3.2)}。目前的版本為v3.2。**
 ```js
 <script>
   window.fbAsyncInit = function() {
   //初始化FB JS SDK
     FB.init({
-      appId      : '{你的應用程式id}',
+      appId      : '{你的應用程式編號}',
       cookie     : true,
       xfbml      : true,
       version    : '{api的版本(目前最新是3.2)}'
